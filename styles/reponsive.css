@@ -1,43 +1,104 @@
-@media screen and (max-width: 990px) {
-    header{
+@media screen and (max-width:992px) {
+
+    /* Global starts */
+        .section-title{
+            font-size: 34px;
+        }
+    /* Global ends */
+    
+    /* Hero Starts Here */
+        #hero h2{
+            font-size: 54px;
+        }
+    /* Hero Ends Here */
+    
+    /* Player Starts Here */
+        #players .container{
+            grid-template-columns: repeat(2, 1fr ); 
+        }
+    /* Player Ends Here */
+    
+    /* Blog starts */
+    
+        article:nth-child(3){
+            display: none;
+        }
+        .posts{
+            grid-template-columns: repeat(2,1fr );
+        }
+    
+    /* Blog ends */
+}
+
+/*Mobile Version*/
+
+@media screen and (max-width:622px) {
+    /* Global */
+
+
+    /* Header  */
+    nav{
         display: none;
     }
-    #hero .container > * {
+    #mobile-menu{
+        font-size:22px;
+        color:white;
+        background:var(--btn-color);
+        padding:3px 10px;
+        display: block;
+    }
+
+    /* Hero */
+    #hero .container > *{
         width: 100%;
     }
     #hero h2{
         font-size: 44px;
     }
-
-    #players {
-        padding: 50px 15px;
+    #hero-content{
+        order:1;
     }
+    #hero-image{
+        order: 0;
+    }
+
+    /* Players */
     #players .container{
         grid-template-columns: 1fr;
-        grid-row-gap:50px ;
     }
-    .player{
-        padding:30px;
-    }
-    #copa .container {
+
+    /*Copa section*/
+    #copa .container{
         grid-template-columns: 1fr;
-        grid-row-gap:25px ;
     }
-    #euro .container {
+    #copa img{
+        margin-top:30px;
+    }
+
+    /* Euro Section */
+    #euro .container{
         grid-template-columns: 1fr;
-        grid-row-gap:25px ;
     }
+    #euro-image{
+        order:1;
+        margin-top:30px;
+    }
+    #euro-content{
+        order:0;
+    }
+
+    /* Blog */
     .posts{
-        grid-template-columns: repeat(1, 1fr);
-        grid-row-gap:25px ;
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
     }
-    article:nth-child(3){
+
+    /* Footer */
+    footer img{
+        width: 100%;
+    }
+    #to-top{
         display: none;
     }
-    footer p{
-        text-align: center;
-    }
-    footer #top{
-        display: none;
-    }
+
 }

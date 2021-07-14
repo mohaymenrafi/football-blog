@@ -73,6 +73,9 @@ header{
     background-color: var(--blue);
     padding:25px 0 15px; 
 }
+#mobile-menu{
+    display: none;
+}
 header .container{
     display: flex;
     align-items: center;
