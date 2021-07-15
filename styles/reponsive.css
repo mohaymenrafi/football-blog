@@ -63,11 +63,17 @@
     }
 
     /* Players */
+    #players{
+        padding:70px 0 35px;
+    }
     #players .container{
         grid-template-columns: 1fr;
     }
 
     /*Copa section*/
+    #copa{
+        padding:35px 0;
+    }
     #copa .container{
         grid-template-columns: 1fr;
     }
@@ -76,6 +82,9 @@
     }
 
     /* Euro Section */
+    #euro{
+        padding:35px 0;
+    }
     #euro .container{
         grid-template-columns: 1fr;
     }
@@ -88,12 +97,18 @@
     }
 
     /* Blog */
+    #blog{
+        padding:35px 0;
+    }
     .posts{
         grid-template-columns: 1fr;
         grid-row-gap: 30px;
     }
 
     /* Footer */
+    footer{
+        padding:35px 10px 30px;
+    }
     footer img{
         width: 100%;
     }
